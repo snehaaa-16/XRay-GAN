@@ -19,16 +19,20 @@ The objective is to enhance the diversity and balance of limited medical dataset
 
 ## Project Structure
 
+```
+
 XRay-GAN/
 │
 ├── X-Rays GAN/
-│ ├── CLASSICALGAN.ipynb
-│ ├── DCGAN.ipynb
-│ ├── WGAN.ipynb
-│ ├── VAEDCGAN.ipynb
-│ └── BiLSTMGAN.ipynb
+│   ├── CLASSICALGAN.ipynb
+│   ├── DCGAN.ipynb
+│   ├── WGAN.ipynb
+│   ├── VAEDCGAN.ipynb
+│   └── BiLSTMGAN.ipynb
 │
 └── README.md
+
+````
 
 Each notebook includes data preprocessing, model training, and synthetic X-ray image generation workflows.
 
@@ -48,23 +52,34 @@ Each notebook includes data preprocessing, model training, and synthetic X-ray i
 
 ```bash
 pip install torch torchvision numpy pandas matplotlib seaborn scikit-learn
+````
 
-Usage
-To train a GAN model, open the corresponding Jupyter notebook in the X-Rays GAN directory and execute the cells sequentially.
+---
+
+## Usage
+
+To train a GAN model, open the corresponding Jupyter notebook in the **X-Rays GAN** directory and execute the cells sequentially.
 
 For example, to train a DCGAN model:
+
+```
 X-Rays GAN/DCGAN.ipynb
+```
 
-Results
+---
 
-DCGAN produced stable and visually realistic images.
-WGAN improved convergence and reduced mode collapse.
-Synthetic images demonstrate strong potential for augmenting X-ray datasets.
+## Results
 
-Future Work
+* **DCGAN** produced stable and visually realistic images.
+* **WGAN** improved convergence and reduced mode collapse.
+* Synthetic images demonstrate strong potential for augmenting X-ray datasets.
 
-Integrate explainable AI techniques (e.g., SHAP, LIME).
-Quantitatively evaluate performance using metrics such as FID, SSIM, and PSNR.
-Extend experiments to other medical modalities such as ECG and CT scans.
+---
+
+## Future Work
+
+* Integrate explainable AI techniques (e.g., SHAP, LIME).
+* Quantitatively evaluate performance using metrics such as FID, SSIM, and PSNR.
+* Extend experiments to other medical modalities such as ECG and CT scans.
 
 ---
